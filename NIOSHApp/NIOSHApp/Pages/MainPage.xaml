@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CarouselPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NIOSHApp.Pages.MainPage"
+             Title="NIOSH">
+  <ContentPage>
+        <StackLayout Margin="0,20,0,20" HorizontalOptions="Center" VerticalOptions="Center">
+            <Label Text="MULTIPLICADOR HORIZONTAL (HM)" Font="14" HorizontalOptions="Center"/>
+            <Label Text="Digite valor en pulgadas (in) &#10;
+        10 &lt;=X; X&lt;25" HorizontalOptions="Center"/>
+            <StackLayout Padding="8" Orientation="Horizontal" >
+                <Entry Keyboard="Numeric" HorizontalOptions="FillAndExpand" Placeholder="Origen"></Entry>
+                <Entry Keyboard="Numeric" HorizontalOptions="FillAndExpand" Placeholder="Destino" ></Entry>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage>
+
+    <ContentPage>
+        <StackLayout Margin="0,20,0,20" HorizontalOptions="Center" VerticalOptions="Center">
+            <Label Text="MULTIPLICADOR VERTICAL (VM)" Font="14" HorizontalOptions="Center"/>
+            <Label Text="Digite valor en pulgadas (in) &#10;
+         0 &lt;=X; X>70 " HorizontalOptions="Center"/>
+            <StackLayout Padding="8" Orientation="Horizontal">
+                <Entry Keyboard="Numeric" HorizontalOptions="FillAndExpand" Placeholder="Origen"></Entry>
+                <Entry Keyboard="Numeric" HorizontalOptions="FillAndExpand" Placeholder="Destino" ></Entry>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage>
+
+    <ContentPage>
+        <StackLayout Margin="0,20,0,20" HorizontalOptions="Center" VerticalOptions="Center">
+            <Label Text="MULTIPLICADOR DISTANCIA (DM)" Font="14" HorizontalOptions="Center"/>
+            <Label Text="Digite valor en pulgadas (in)" HorizontalOptions="Center"/>
+            <StackLayout Padding="8" Orientation="Horizontal">
+                <Entry Keyboard="Numeric" HorizontalOptions="FillAndExpand" Placeholder="Vertical Origen"></Entry>
+                <Entry Keyboard="Numeric" HorizontalOptions="FillAndExpand" Placeholder="Vertical Destino" ></Entry>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage>
+
+    <ContentPage>
+        <StackLayout Margin="0,20,0,20" HorizontalOptions="Center" VerticalOptions="Center">
+            <Label Text="MULTIPLICADOR ASIMETRÍA (AM)" Font="14" HorizontalOptions="Center"/>
+            <Label Text="Digite valor en pulgadas (in)" HorizontalOptions="Center"/>
+            <StackLayout Padding="8" Orientation="Horizontal">
+                <Entry Keyboard="Numeric" HorizontalOptions="FillAndExpand" Placeholder="Ángulo Origen"></Entry>
+                <Entry Keyboard="Numeric" HorizontalOptions="FillAndExpand" Placeholder="Ángulo Destino" ></Entry>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage>
+
+    <ContentPage>
+        <StackLayout Margin="0,20,0,20" HorizontalOptions="Center" VerticalOptions="Center">
+            <Label Text="MULTIPLICADOR DE FRECUENCIA (FM)" Font="14" HorizontalOptions="Center"/>
+            <Label Text="Digite valor en Levantamientos &#10;por minuto (Solo en una casilla)(in)
+                                              &#10; 10 &lt;=X; X&lt;25" HorizontalTextAlignment="Center"/>
+
+            <Label HorizontalOptions="Center" Text="Duración: 1 hr"/>
+            <StackLayout Padding="8" Orientation="Horizontal">
+                <Entry Keyboard="Numeric" HorizontalOptions="FillAndExpand" Placeholder=""></Entry>
+                <Entry Keyboard="Numeric" HorizontalOptions="FillAndExpand" Placeholder="" ></Entry>
+            </StackLayout>
+            <Label HorizontalOptions="Center" Text="Duración: 1 hr - 2 hrs"/>
+            <StackLayout Padding="8" Orientation="Horizontal">
+                <Entry Keyboard="Numeric" HorizontalOptions="FillAndExpand" Placeholder=""></Entry>
+                <Entry Keyboard="Numeric" HorizontalOptions="FillAndExpand" Placeholder="" ></Entry>
+            </StackLayout>
+            <Label HorizontalOptions="Center" Text="Duración: 2 hrs - 8 hrs"/>
+            <StackLayout Padding="8" Orientation="Horizontal">
+                <Entry Keyboard="Numeric" HorizontalOptions="FillAndExpand" Placeholder=""></Entry>
+                <Entry Keyboard="Numeric" HorizontalOptions="FillAndExpand" Placeholder="" ></Entry>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage>
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Icon="camera_icon_android.png" ></ToolbarItem>
+    </ContentPage.ToolbarItems>
+</CarouselPage>
